@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos DOM</title>
+    <style>
+        body {
+            background: rgb(46, 213, 224);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOMMMM!!!</h1>
+    <p>Aqui vai um resultado</p>
+    <p>Apredendo a usar <strong>DOM</strong> em JavaScript</p> 
+    <div id="msg">Clique em mim</div>
+<!-- DOM = Document Object Model -->
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] // Consigo acessar elemento pela tag
+        // window.document.write(`Está escrito assim: ${p1.innerText}`)
+        // p1.style.color = 'blue'
+        // corpo.style.background = 'black'
+        // window.alert(p1.innerText)
+        // var d = window.document.getElementById('msg')
+        // d.style.background = 'green'
+        // d.innerText = 'Estou aguardando...'
+        var d = window.document.querySelector('div#msg') // div# , class.
+        d.style.background = 'red'
+    </script>
+</body>
+</html>
