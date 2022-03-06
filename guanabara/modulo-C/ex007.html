@@ -9,6 +9,13 @@
         body {
             font: normal 18pt Arial;
         }
+        input {
+            font: normal  18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +32,7 @@
             var n1 = Number(tn1.value) // .value para pegar o valor dentro de n1
             var n2 = Number(tn2.value)
             s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
     </script>
 </body>

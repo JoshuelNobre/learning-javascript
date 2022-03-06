@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver se é BR</title>
+</head>
+<body>
+    <h1>Verificando nacionalidade</h1>
+    Digite seu pais de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var input = document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var texto = input.value.toUpperCase()
+            res.innerHTML = `<p>Olá, seja bem vindo ao aeroporto</p>`
+            
+
+            if (texto === 'BRASIL') {
+                res.innerHTML += `você é <strong>BRASILEIRO</strong>!`
+            } else {
+                res.innerHTML += `você é <strong>ESTRANGEIRO</strong>!`
+            }
+        }
+    </script>
+</body>
+</html>
